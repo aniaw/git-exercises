@@ -12,6 +12,10 @@ describe('functions test', function () {
        it('should not return a string', function () {
             expect(answers.reverseNumber(1234)).not.toBe('4321');
         });
+       it('should not accept not number as an argument', function () {
+            expect(answers.reverseNumber('abcs')).toEqual(false);
+        });
+
 
 
     });
